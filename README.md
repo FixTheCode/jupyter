@@ -1,4 +1,4 @@
-# Juypter notebooks
+# Juypter Notebooks
 Jupyter Notebooks are open-source web applications that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Used by data scientists and those wishing to prototype various data cleaning transformation, numerical simulation, statistical modeling, data visualization and machine learning activities.  Juypter supports Python, R and F#. There are a number of notebooks below that demonstrate a number of the features above.
 
 ### Set-up
@@ -13,7 +13,7 @@ Tips for Docker use (Linux example, Windows commands will be similar)
 ## Named Entity Recognition (NER)
 Named Entity Recognition is a way of extracted names of persons, organisations, locations etc. from unstructured text.  This example uses  pre-trained machine learning models.
 
-https://notebooks.azure.com/davehorton/projects/natural-language-processing (Azure) . 
+https://notebooks.azure.com/davehorton/projects/natural-language-processing (Azure)<br/> 
 https://tinyurl.com/tp93e42 (GitHub)
 
 This Juypter notebook demonstrates:

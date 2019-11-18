@@ -31,6 +31,9 @@ Tech tools used are:
 ## Speech Recognition (SR)
 With speech becoming an increasing used and reliable method of user interaction for consumers with Alexa, Cortana, Google Assistant and Siri there will be a need to deal with various aspects of speech in business scenarios.  Alexa for Business is one example heading in this direction. 
 
+https://notebooks.azure.com/davehorton/projects/process-audio-file (Azure)<br/>
+https://bit.ly/2XmgvtE (GitHub)
+
 This Juypter Notebook demonstrate extracting text from an audio file.
 
     - Visualising the wave form of the audio file
@@ -47,8 +50,10 @@ Tech tools used are:
     - Google Speech Recognition API
 
 ## Machine Learning (ML)
-This example take an historic file of stock quotes and uses machine learning to predict the future stock prices using various techniques.
+This example takes an historic file of stock quotes and uses machine learning to predict the future stock prices using various techniques.
 
+## Text Mining
 
+## Cognitive Search
 
 ## Statistical Analysis

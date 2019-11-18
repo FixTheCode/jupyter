@@ -16,7 +16,7 @@ Named Entity Recognition is a way of extracted names of persons, organisations, 
 https://notebooks.azure.com/davehorton/projects/natural-language-processing (Azure)<br/> 
 https://bit.ly/2poVMIW (GitHub)
 
-This Juypter notebook demonstrates:
+This Juypter Notebook demonstrates:
 
     - Extraction of names mentioned in a tweet
     - Extracting multiple name from a large block of text
@@ -28,19 +28,27 @@ Tech tools used are:
     - tesseract and pytesseract, a popular OCR library and Python wrapper for it
     - Pillow, an imaging library 
 
-## Speech Recognition
-With speech becoming an increasing use method of user interactive for consumers with Alexa, Cortana, Google Assistant and Siri there will be a need to deal with various aspects of speech in business scenarios.  Alexa for Business is one example. 
+## Speech Recognition (SR)
+With speech becoming an increasing used and reliable method of user interaction for consumers with Alexa, Cortana, Google Assistant and Siri there will be a need to deal with various aspects of speech in business scenarios.  Alexa for Business is one example heading in this direction. 
 
-This Juypter notebook demonstrate extracting text from an audio file.
+This Juypter Notebook demonstrate extracting text from an audio file.
 
     - Visualising the wave form of the audio file
+    - Playback of the audio
     - Extraction of text from a WAV file
 
 Tech tools used are:
     
-    - librosa
-    - matplotlib
-    - numpty
-    - scipy
+    - LibROSA, supports music and audio analysis
+    - matplotlib, a 2D plotting library
+    - NumPy, supports scientific operations on data
+    - SciPy, qn ecosystem of open-source software include the above
+    - SpeechRecognition, supports several speech detection APIs
+    - Google Speech Recognition API
 
-## Statistical Anlysis
+## Machine Learning (ML)
+This example take an historic file of stock quotes and uses machine learning to predict the future stock prices using various techniques.
+
+
+
+## Statistical Analysis

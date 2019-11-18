@@ -13,7 +13,7 @@ Tips for Docker use (Linux example, Windows commands will be similar)
 ## Named Entity Recognition (NER)
 Named Entity Recognition is a way of extracted names of persons, organisations, locations etc. from unstructured text.  This example uses  pre-trained machine learning models.
 
-https://notebooks.azure.com/davehorton/projects/natural-language-processing (Azure)
+https://notebooks.azure.com/davehorton/projects/natural-language-processing (Azure) . 
 https://tinyurl.com/tp93e42 (GitHub)
 
 This Juypter notebook demonstrates:

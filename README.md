@@ -8,7 +8,7 @@ Tips for Docker use (Linux example, Windows commands will be similar)
 
     - docker pull jupyter/datascience-notebook:latest
     - docker run -it --rm -p 8888:8888 -p 4040:4040 -v ~:/home/jovyan/workspace jupyter/datascience-notebook:latest
-    - Use the URL output from the docker run command in 
+    - Use the URL output from the docker run command 
 
 ## Named Entity Recognition (NER)
 Named Entity Recognition is a way of extracted names of persons, organisations, locations etc. from unstructured text.  This example uses  pre-trained machine learning models.
@@ -44,8 +44,6 @@ Tech tools used are:
     
     - LibROSA, supports music and audio analysis
     - matplotlib, a 2D plotting library
-    - NumPy, supports scientific operations on data
-    - SciPy, qn ecosystem of open-source software include the above
     - SpeechRecognition, supports several speech detection APIs
     - Google Speech Recognition API
 

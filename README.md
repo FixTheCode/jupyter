@@ -1,5 +1,5 @@
 # Jupyter Notebooks
-Jupyter Notebooks are open-source web applications that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Used by data scientists and those wishing to prototype various data cleaning transformation, numerical simulation, statistical modeling, data visualization and machine learning activities.  Juypter supports Python, R and F#. There are severalnotebooks below that you can clone and experiment with.
+Jupyter Notebooks are open-source web applications that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Used by data scientists and those wishing to prototype various data cleaning transformation, numerical simulation, statistical modeling, data visualization and machine learning activities.  Juypter supports Python, R and F#. There are several notebooks below that you can clone and experiment with.
 
 There are thousands of tool/packages that can be used. The core tech used in these notebooks is:
 

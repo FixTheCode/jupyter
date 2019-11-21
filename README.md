@@ -15,6 +15,10 @@ There are thousands of tool/packages that can be used. The core tech used in the
 + SpeechRecognition, supports several speech detection APIs
 + Google Speech Recognition API
 
+### Uses
+
+Apart from running interactive data science experiments the results can be published.  You can calculate/run an entire notebook non-interactively and save the results in a variety of formats such as HTML, PDF etc.  This make notebooks a useful tool in reporting schedules and even ETL workflows.  There are even packages that create interactive dashboards for a richer use experience. 
+
 ### Set-up
 
 TL;DR Use Azure Notebooks as they have more utilities and software pre installed.

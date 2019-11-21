@@ -1,11 +1,25 @@
 # Jupyter Notebooks
 Jupyter Notebooks are open-source web applications that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Used by data scientists and those wishing to prototype various data cleaning transformation, numerical simulation, statistical modeling, data visualization and machine learning activities.  Juypter supports Python, R and F#. There are severalnotebooks below that you can clone and experiment with.
 
+There are thousands of tool/packages that can be used. The core tech used in these notebooks is:
+
++ Ubuntu Linux
++ Miniconda, a small version of the Anaconda package manager for a Python/R data science distribution
++ Python 3
++ Apache Tika, text extracts from files
++ SpaCy, an industrial stength natural language processing (NLP) library
++ tesseract and pytesseract, a popular OCR library and Python wrapper for it
++ Pillow, an imaging library
++ LibROSA, music and audio analysis
++ Matplotlib, a 2D plotting library
++ SpeechRecognition, supports several speech detection APIs
++ Google Speech Recognition API
+
 ### Set-up
 
 TL;DR Use Azure Notebooks as they have more utilities and software pre installed.
 
-The easiest way to get started with Juypter is to use a cloud based service such as Azure Notebooks or a local Docker image. See https://notebooks.azure.com/ and https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html   There are several Docker images each with different libraries pre loaded.  With Azure Notebook there is a basic configuration on which additional libraries can be loaded as required.  
+The easiest way to get started with Juypter is to use a cloud based service such as Azure Notebooks or a Docker image. See https://notebooks.azure.com/ and https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html   There are several Docker images each with different libraries pre loaded.  
 
 Tips for Docker use (Linux example, Windows commands will be similar) 
 
@@ -13,7 +27,7 @@ Tips for Docker use (Linux example, Windows commands will be similar)
     - docker run --name jupyter -e GRANT_SUDO=yes --user root -it --rm -p 8888:8888 -p 4040:4040 -v ~:/home/jovyan/workspace jupyter/datascience-notebook:latest
     - Use the URL output from the docker run command 
     
-Important: In development mode you can add the following flags to docker run command to run with elevated permissions. -e GRANT_SUDO=yes --user root
+Important: In development mode you can add the following flags to docker run command to run with elevated permissions. _-e GRANT_SUDO=yes --user root_ this is needed in you need to install additional software and update the container image.
   
 Java is needed to support Apache Tika which we use in the text mining example. The docker image we are using did not have Java installed but the Azure Notebook service did. Here is the easiest way to install Java to the container. Take a look at the terminal where you run the container from. It should tell you where the container is running. E.g. http://204cb5712627:8888 We need the first four digits, 204c from this. Replace this with the value you have.
 
@@ -29,8 +43,8 @@ You should see a new image called Jupyter and the original. The container id can
     - docker run --name jupyter -e GRANT_SUDO=yes --user root -it --rm -p 8888:8888 -p 4040:4040 -v ~:/home/jovyan/workspace jupyter
 
 ### Productivity tools
-There are a number of useful extensions to a core Jupyter notebook that are recommended for installation, however they do not appear to work in the version 6 of Jupyter that the docker image has installed. Using them would also create a dependency with any note books that you share.
-    
+There are a number of useful extensions to a core Jupyter notebook that are recommended for installation, however they are not available in the docker image has installed. Using them would also create a dependency with any note books that you share.
+
 ## Named Entity Recognition (NER)
 Named Entity Recognition is a way of extracted names of persons, organisations, locations etc. from unstructured text.  This example uses  pre-trained machine learning models.
 
@@ -64,7 +78,7 @@ This Jupyter Notebook demonstrate extracting text from an audio file.
 Tech tools used are:
     
     - LibROSA, supports music and audio analysis
-    - matplotlib, a 2D plotting library
+    - Matplotlib, a 2D plotting library
     - SpeechRecognition, supports several speech detection APIs
     - Google Speech Recognition API
 

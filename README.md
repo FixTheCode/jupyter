@@ -2,17 +2,34 @@
 Jupyter Notebooks are open-source web applications that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Used by data scientists and those wishing to prototype various data cleaning transformation, numerical simulation, statistical modeling, data visualization and machine learning activities.  Juypter supports Python, R and F#. There are severalnotebooks below that you can clone and experiment with.
 
 ### Set-up
+
+TL;DR Use Azure Notebooks as they have more utilities and software pre installed.
+
 The easiest way to get started with Juypter is to use a cloud based service such as Azure Notebooks or a local Docker image. See https://notebooks.azure.com/ and https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html   There are several Docker images each with different libraries pre loaded.  With Azure Notebook there is a basic configuration on which additional libraries can be loaded as required.  
 
 Tips for Docker use (Linux example, Windows commands will be similar) 
 
     - docker pull jupyter/datascience-notebook:latest
-    - docker run -it --rm -p 8888:8888 -p 4040:4040 -v ~:/home/jovyan/workspace jupyter/datascience-notebook:latest
+    - docker run --name jupyter -e GRANT_SUDO=yes --user root -it --rm -p 8888:8888 -p 4040:4040 -v ~:/home/jovyan/workspace jupyter/datascience-notebook:latest
     - Use the URL output from the docker run command 
     
+Important: In development mode you can add the following flags to docker run command to run with elevated permissions. -e GRANT_SUDO=yes --user root
+  
+Java is needed to support Apache Tika which we use in the text mining example. The docker image we are using did not have Java installed but the Azure Notebook service did. Here is the easiest way to install Java to the container. Take a look at the terminal where you run the container from. It should tell you where the container is running. E.g. http://204cb5712627:8888 We need the first four digits, 204c from this. Replace this with the value you have.
+
+    - docker exec it 204c bash
+    - sudo apt update
+    - sudo apt install default-jdk
+    - exit
+    - docker commit <container id> jupyter
+    - docker images
+ 
+You should see a new image called Jupyter and the original. The container id can be found by issues a docker ps command. Stop running the current docker container and run the new one.
+
+    - docker run --name jupyter -e GRANT_SUDO=yes --user root -it --rm -p 8888:8888 -p 4040:4040 -v ~:/home/jovyan/workspace jupyter
+
 ### Productivity tools
 There are a number of useful extensions to a core Jupyter notebook that are recommended for installation, however they do not appear to work in the version 6 of Jupyter that the docker image has installed. Using them would also create a dependency with any note books that you share.
-
     
 ## Named Entity Recognition (NER)
 Named Entity Recognition is a way of extracted names of persons, organisations, locations etc. from unstructured text.  This example uses  pre-trained machine learning models.
@@ -55,6 +72,19 @@ Tech tools used are:
 This example takes an historic file of stock quotes and uses machine learning to predict the future stock prices using various techniques.
 
 ## Text Mining
+This example show how to extract and process text from a PDF file but similar can be achieved from other common formats including Microsoft Office document.
+
+This Jupyter Notebook demonstrate:
+
+    - Displaying the PDF file
+    - Extracting text from the PDF
+    - Processing the data to prepare it for analysis
+    - Displaying graphs of our analysis
+
+Tech tools used are:
+    
+    - Tika, a highly performant text processing library
+    
 
 ## Cognitive Search
 

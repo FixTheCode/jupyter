@@ -89,6 +89,9 @@ Tech tools used are:
 ## Text Mining
 This example shows how to extract and process text from a PDF file but similar can be achieved from other common formats including Microsoft Office documentx.  This notebook shows how different language model yield different results. The model used are intended for written text (blogs, news, comments).
 
+https://notebooks.azure.com/davehorton/projects/mine-text (Azure) <br/>
+https://bit.ly/2KVt9L5 (GitHub)
+
 This Jupyter Notebook demonstrate:
 
     - Displaying the PDF file

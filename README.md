@@ -86,23 +86,27 @@ Tech tools used are:
     - SpeechRecognition, supports several speech detection APIs
     - Google Speech Recognition API
 
-## Machine Learning (ML)
-This example takes an historic file of stock quotes and uses machine learning to predict the future stock prices using various techniques.
-
 ## Text Mining
-This example show how to extract and process text from a PDF file but similar can be achieved from other common formats including Microsoft Office document.
+This example shows how to extract and process text from a PDF file but similar can be achieved from other common formats including Microsoft Office documentx.  This notebook shows how different language model yield different results. The model used are intended for written text (blogs, news, comments).
 
 This Jupyter Notebook demonstrate:
 
     - Displaying the PDF file
     - Extracting text from the PDF
     - Processing the data to prepare it for analysis
+    - Performing frequency analysis of the text
     - Displaying graphs of our analysis
 
 Tech tools used are:
     
+    - NLTK, the leading Python platform for working with natural language data
     - Tika, a highly performant text processing library
+    - SpaCy, support large-scale information extraction tasks using trained language models.
+    - Pandas, data processing
+    - Matplotlib, visuals
     
+## Machine Learning (ML)
+This example takes an historic file of stock quotes and uses machine learning to predict the future stock prices using various techniques.
 
 ## Cognitive Search
 

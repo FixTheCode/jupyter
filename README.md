@@ -92,9 +92,8 @@ This example shows how to extract and process text from a PDF file but similar c
 https://notebooks.azure.com/davehorton/projects/mine-text (Azure) <br/>
 https://bit.ly/2KVt9L5 (GitHub)
 
-This Jupyter Notebook demonstrate:
+This Jupyter Notebook demonstrates:
 
-    - Displaying the PDF file
     - Extracting text from the PDF
     - Processing the data to prepare it for analysis
     - Performing frequency analysis of the text
@@ -109,7 +108,6 @@ Tech tools used are:
     - Matplotlib, visuals
     
 ## Machine Learning (ML)
-This example takes an historic file of stock quotes and uses machine learning to predict the future stock prices using various techniques.
 
 ## Cognitive Search
 

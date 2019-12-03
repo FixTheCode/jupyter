@@ -108,6 +108,44 @@ Tech tools used are:
     - Matplotlib, visuals
     
 ## Machine Learning (ML)
+This example shows how to take a dataset and apply a supervised ML algorithm to make predictions on a diabetics’ waist size given their cholesterol level. A fictitious example using a real world dataset.
+
+This Jupyter Notebook demonstrates:
+
+    - Matplotlib, visuals and custom styling
+    - K-nearest neighbors (KNN) regression
+
+Tech tools used are:
+    
+    - Scikit-learn, for the pre-built ML algorithms
+    - Pandas, data processing
+    - Numpy, data processing
+    - Matplotlib, visuals
+    - colored, for terminal output colours
+   
+Creating custom styling can be tricky in Matplotlib.  The orignal attempt at colour coding gender in the scatter diagram was based on the following code fragment:
+
+```python
+data=[[220,20,0], [194,45, 1] ... ]
+
+def setColour():
+    cols=[]
+    for row in data:
+        if (row[2]==0):
+            cols.append('#585094')
+        elif (row[2]==1):
+            cols.append('#009578')
+    return cols
+    
+ setColour()
+ ax = df.plot.scatter(x ='Cholesterol', y='Waist Size', c=cols)
+```
+The final version simplified the code as follows:
+
+```python
+data=[[220,20,0], [194,45, 1] ... ]
+ax = df.plot.scatter(x ='Cholesterol', y='Waist Size', c=df['Gender'].apply(lambda x: colours[x])
+```
 
 ## Cognitive Search
 

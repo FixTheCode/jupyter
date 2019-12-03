@@ -110,6 +110,8 @@ Tech tools used are:
 ## Machine Learning (ML)
 This example shows how to take a dataset and apply a supervised ML algorithm to make predictions on a diabetics’ waist size given their cholesterol level. A fictitious example using a real world dataset.
 
+https://bit.ly/3822MwZ (Github)
+
 This Jupyter Notebook demonstrates:
 
     - Matplotlib, visuals and custom styling

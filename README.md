@@ -148,3 +148,12 @@ The final version simplified the code as follows:
 data=[[220,20,0], [194,45, 1] ... ]
 ax = df.plot.scatter(x ='Cholesterol', y='Waist Size', c=df['Gender'].apply(lambda x: colours[x])
 ```
+
+### Machine Learning (ML) Stock Price Prediction
+This example shows how to take make share price predictions. We used the Triad share prices data available from https://uk.finance.yahoo.com/quote/TRD.L/history?p=TRD.L and use AutoTS (and all the clever packages it uses) to predict future share prices.  You can play with the data taking historic values and make a prediction and compare the results with future actuals.  It does take quite a while (~45 minutes) to run the predictions even on a reduced dataset of 200 stock prices.
+
+https://bit.ly/TBD (Github)
+
+This Jupyter Notebook demonstrates:
+
+    - Probabilistic time series modeling using GluonTS

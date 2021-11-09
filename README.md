@@ -21,9 +21,9 @@ Apart from running interactive data science experiments the results can be publi
 
 ### Set-up
 
-TL;DR Use Azure Notebooks as they have more utilities and software pre installed.
+TL;DR Azure Notebooks and online examples are no more use Anaconda, the latest version of Visual Studio Code or even Kaggle https://www.kaggle.com
 
-The easiest way to get started with Juypter is to use a cloud based service such as Azure Notebooks or a Docker image. See https://notebooks.azure.com/ and https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html   There are several Docker images each with different libraries pre loaded.  
+The easiest way to get started with Juypter is to use the Anaconda platform or a Docker image. See https://www.anaconda.com/ and https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html   There are several Docker images each with different libraries pre loaded.  
 
 Tips for Docker use (Linux example, Windows commands will be similar) 
 
@@ -52,7 +52,7 @@ There are a number of useful extensions to a core Jupyter notebook that are reco
 ## Named Entity Recognition (NER)
 Named Entity Recognition is a way of extracted names of persons, organisations, locations etc. from unstructured text.  This example uses  pre-trained machine learning models.
 
-https://notebooks.azure.com/davehorton/projects/natural-language-processing (Azure)<br/> 
+<br/> 
 https://bit.ly/2poVMIW (GitHub)
 
 This Jupyter Notebook demonstrates:
@@ -70,7 +70,7 @@ Tech tools used are:
 ## Speech Recognition (SR)
 With speech becoming an increasing used and reliable method of user interaction for consumers with Alexa, Cortana, Google Assistant and Siri there will be a need to deal with various aspects of speech in business scenarios.  Alexa for Business is one example heading in this direction. 
 
-https://notebooks.azure.com/davehorton/projects/process-audio-file (Azure)<br/>
+<br/>
 https://bit.ly/2XmgvtE (GitHub)
 
 This Jupyter Notebook demonstrate extracting text from an audio file.
@@ -89,7 +89,7 @@ Tech tools used are:
 ## Text Mining
 This example shows how to extract and process text from a PDF file but similar can be achieved from other common formats including Microsoft Office documentx.  This notebook shows how different language model yield different results. The model used are intended for written text (blogs, news, comments).
 
-https://notebooks.azure.com/davehorton/projects/mine-text (Azure) <br/>
+<br/>
 https://bit.ly/2KVt9L5 (GitHub)
 
 This Jupyter Notebook demonstrates:
@@ -148,7 +148,3 @@ The final version simplified the code as follows:
 data=[[220,20,0], [194,45, 1] ... ]
 ax = df.plot.scatter(x ='Cholesterol', y='Waist Size', c=df['Gender'].apply(lambda x: colours[x])
 ```
-
-## Cognitive Search
-
-## Statistical Analysis

@@ -150,10 +150,11 @@ ax = df.plot.scatter(x ='Cholesterol', y='Waist Size', c=df['Gender'].apply(lamb
 ```
 
 ### Machine Learning (ML) Stock Price Prediction
-This example shows how to take make share price predictions. We used the Triad share prices data available from https://uk.finance.yahoo.com/quote/TRD.L/history?p=TRD.L and use AutoTS (and all the clever packages it uses) to predict future share prices.  You can play with the data taking historic values and make a prediction and compare the results with future actuals.  It does take quite a while (~45 minutes) to run the predictions even on a reduced dataset of 200 stock prices.
+This example shows how to  make share price predictions. We use the Triad share price data available from https://uk.finance.yahoo.com/quote/TRD.L/history?p=TRD.L and use AutoTS (and all the clever packages it uses) to predict future share prices.  You can play with the data taking historic values and make a prediction and compare the results with future actuals.  It does take quite a while (~45 minutes) to run the predictions even on a reduced dataset of 200 stock prices.  The predictions are at the bottom of the vast amount of output showing the processing performed.
 
-https://bit.ly/TBD (Github)
+https://bit.ly/305oKAd (Github)
 
 This Jupyter Notebook demonstrates:
 
+    - AutoTS Automated Forecasting https://winedarksea.github.io/AutoTS/build/html/index.htmlTS
     - Probabilistic time series modeling using GluonTS
